@@ -1,0 +1,16 @@
+# Example dataset config for custom training. Edit the class names to YOUR products.
+# Folder layout (relative to 'path'):
+#   datasets/warehouse/
+#     images/train  images/val  images/test      <- .jpg / .png shelf photos
+#     labels/train  labels/val  labels/test      <- one .txt per image, same file name
+# Label line format (normalised 0-1):  class_id x_center y_center width height
+path: datasets/warehouse
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: cereal_box
+  1: water_bottle
+  2: soda_can
+  3: detergent_pack
